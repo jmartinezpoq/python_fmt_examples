@@ -16,6 +16,6 @@ check: env_ok
 	env/bin/isort  --sp .isort.cfg $(py_files) --check
 	env/bin/black --check $(py_files)
 
-.PHONY
+.PHONY: clean
 clean:
 	rm -rf env_ok env
